@@ -1,0 +1,39 @@
+.carrousel {
+    width: 90%;
+    max-width: 120em;
+    background-color: lightblue;
+
+}
+.carrousel .grande {
+    width: 400%;
+    background-color: skyblue;
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(-25%x);
+}
+.carrousel .img {
+    width: calc(100% / 4);
+}
+.carrousel .puntos {
+    width: 100%;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carrousel .punto {
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    margin: 1em;
+
+
+
+}
