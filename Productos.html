@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR Alumini Fabrica de Aluminio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/jpg" href="/fb.jpg"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,28 +22,26 @@
   </head>
   <body>
     <header>
-      <!-- aca iria el logo con las pag/secciones, en negrita fuente berlin sans fb demi -->
-      <div class="site-title">
-          <a href="index.html"><h1>JR Alumini</h1></a>
-          <b>Fabrica de aberturas de aluminio</b>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><h1 class="tituloPag">JR Alumini</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="Productos.html" target="_self">Productos</a>
+              <a class="nav-link" href="Nuestras-instalaciones.html">Nuetras Instalaciones</a>
+              <a class="nav-link" href="Quienes-somos.html" target="_self">¿Quienes Somos?</a>
+              <a class="nav-link" href="Clientes.html">Clientes</a>
+              <a class="nav-link" href="Contacto.html">Contacto</a>
+            </div>
           </div>
-    
-      <!-- fuente de las letras de los botones en fuente berlin sans fb -->
-      <!-- fuente del texto Arial -->
-      <!-- boton de wsp anclado abajo a la derecha con hipervinculo a wsp para msj -->
-      <article>
-        <section id="menu">
-          <div class="menu">
-            <a href="Productos.html" target="_self">Productos</a> <!-- como hacerlo linkeable a la seccion? -->
-            <a href="Nuestras-instalaciones.html" target="_self">Nuestras Instalaciones</a>
-            <a href="Quienes-somos.html" target="_self">¿Quienes Somos?</a>
-            <a href="Clientes.html" target="_self">Clientes</a>
-            <a href="Contacto.html" target="_self">Contacto</a>
-          </div>
-        </section>
-      </article>
+        </div>
+      </nav>
+</header>
 
-    </header>
+
     <main>
       <!--la idea seria poder colocar las imagenes en miniatura con la posibilidad de ampliar con un click dentro sin salir de la saccion-->
       <section class="grid">
@@ -50,8 +49,11 @@
         <h1 class="grid__title2">Linea Modena</h1>
         <h1 class="grid__title3">Puertas</h1>
         <h1 class="grid__title4">Portones</h1>
-        <h3 class="grid__description">Trabajamos con dvh y persianas con cajon compacto interior y exterior y mucho mas, no dudes en contactarnos para saber mas sobre nuestros productos.</h3>
-        <img class="grid__img1"  src="./galeria productos/veintiseis.jpg">
+        <h3 class="grid__description">Trabajamos con dvh y persianas con cajon compacto interior y exterior y mucho mas, no dudes en contactarnos.</h3>
+        <img class="grid__img2"  src="./galeria productos/veintiseis.jpg">
+        <img class="grid__img1"  src="./galeria productos/herrero1.jpg">
+        <img class="grid__img3"  src="./galeria productos/herrero2.jpg">
+        <img class="grid__img4"  src="./galeria productos/modena1.jpg">
       </section>
 
           
