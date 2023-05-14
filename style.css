@@ -251,48 +251,48 @@ a {
 
 .grid2 .grid__imgg1{
     grid-area: imgg1;
-    width: 280px;
-    height: 426px;
+    width: 720px;
+    height: 540px;
 }
 
 .grid2 .grid__imgg2{
     grid-area: imgg2;
-    width: 280px;
-    height: 426px;
+    width: 720px;
+    height: 540px;
 }
 .grid2 .grid__imgg3{
     grid-area: imgg3;
-    width: 280px;
-    height: 426px;
+    width: 720px;
+    height: 540px;
 }
 .grid2 .grid__imgg4{
     grid-area: imgg4;
-    width: 280px;
-    height: 426px;
+    width: 720px;
+    height: 540px;
 }
 
 .grid2 .grid__imgg5{
     grid-area: imgg5;
-    width: 320px;
-    height: 426px;
+    width: 720px;
+    height: 540px;
 }
 
 .grid2 .grid__imgg6{
     grid-area: imgg6;
-    width: 320px;
-    height: 426px;
+    width: 720px;
+    height: 540px;
 }
 
 .grid2 .grid__imgg7{
     grid-area: imgg7;
-    width: 320px;
-    height: 426px;
+    width: 720px;
+    height: 540px;
 }
 
 .grid2 .grid__imgg8{
-    grid-area: imgg58;
-    width: 320px;
-    height: 426px;
+    grid-area: imgg8;
+    width: 720px;
+    height: 540px;
 }
 /* 320px ancho max por columna y foto para que entren las 4 y queden prolijas*/
 
@@ -450,6 +450,7 @@ footer {
 /* mq para mobile */
 
 @media screen and (max-width: 426px) {
+    
     .navbar.navbar-expand-lg.bg-body-tertiary{
         background-color: #2d7ef8 !important;
     }
@@ -608,10 +609,10 @@ footer {
     /* grid2 nuestras instalaciones */
 
     
-.grid2{ 
+    .grid2{ 
     display: grid;  
     grid-template-columns: 100%;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
     grid-template-areas: 
     "imgg1"
     "imgg2"
@@ -630,47 +631,50 @@ footer {
 .grid2 .grid__imgg1{
     grid-area: imgg1;
     width: 280px;
-    height: 426px;
+    height: 425px;
 }
 
 .grid2 .grid__imgg2{
     grid-area: imgg2;
     width: 280px;
-    height: 426px;
+    height: 425px;
 }
+
 .grid2 .grid__imgg3{
     grid-area: imgg3;
     width: 280px;
-    height: 426px;
+    height: 425px;
 }
+
 .grid2 .grid__imgg4{
     grid-area: imgg4;
     width: 280px;
-    height: 426px;
+    height: 425px;
 }
 
 .grid2 .grid__imgg5{
     grid-area: imgg5;
     width: 320px;
-    height: 426px;
+    height: 425px;
 }
 
 .grid2 .grid__imgg6{
     grid-area: imgg6;
     width: 320px;
-    height: 426px;
+    height: 425px;
 }
 
 .grid2 .grid__imgg7{
     grid-area: imgg7;
     width: 320px;
-    height: 426px;
+    height: 425px;
 }
 
 .grid2 .grid__imgg8{
     grid-area: imgg8;
     width: 320px;
-    height: 426px;
+    height: 425px;
 }
+
 }
 
