@@ -17,6 +17,7 @@ body {
     width: 100%;
     margin: auto;
     overflow: hidden;
+    padding-top: .5rem;
 }
 
 .slider ul {
@@ -86,17 +87,6 @@ header {
 .navbar{
     --bs-navbar-padding-y: 0;
 }
-
-.site-title{
-    text-decoration: none;
-    margin-left: 25px;
-    width: auto;
-}
-
-.site-title a{
-    text-decoration: none;
-}
-
 
 h1, h2, h3, h4{
     font-weight: bold;
@@ -365,30 +355,7 @@ form{
 
 
 
-.menu {
-    float: right;
-    padding-right: 25px;
-    text-transform: uppercase;
-}
 
-.menu a{
-    vertical-align: top;
-    color:black;
-    font-family: 'Open Sans', sans-serif;
-    padding: 0.62510px;
-}
-.menu a:hover{
-    color: white;
-
-}
-
-.menu a:current{
-    color: blueviolet;
-}
-
-#menu {
-    margin-top: -25px;
-}
 
 
 footer {
@@ -674,6 +641,38 @@ footer {
     grid-area: imgg8;
     width: 280px;
     height: 426px;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: .5rem;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 16s infinite;
+    animation-direction: alternate; 
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.descriptionvideo{
+    padding-left: .5rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #2d7ef8;
+    font-size: medium;
 }
 
 }
