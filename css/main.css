@@ -88,6 +88,12 @@ header {
 
 h1, h2, h3, h4 {
   font-weight: bold;
+  font-family: Open Sans ", " sans-serif;
+}
+
+h4 {
+  font-size: large;
+  font-weight: light;
 }
 
 h1 {
