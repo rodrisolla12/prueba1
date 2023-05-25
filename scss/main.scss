@@ -292,9 +292,60 @@ a {
 }
 /* 320px ancho max por columna y foto para que entren las 4 y queden prolijas*/
 
-.galeria__clientes {
-    width: 100%;
-    height: 100%;
+
+
+/* Grilla de Clientes */
+
+.grid3{ 
+    display: grid;  
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "titulo"
+    "foto1"
+    "foto2"
+    "foto3"
+    "foto4"
+    "foto5"
+    "foto6";
+    justify-items: center;
+    grid-row-gap: 2rem;
+}
+
+.grid3 .grid3__clientes {
+    grid-area: titulo;
+    text-align: center;
+}
+
+.grid3 .grid3__clientes1 {
+    grid-area: foto1;
+    width: 1240px;
+    height: 899px;
+}
+.grid3 .grid3__clientes2 {
+    grid-area: foto2;
+    width: 1240px;
+    height: 1785px;
+}
+.grid3 .grid3__clientes3 {
+    grid-area: foto3;
+    width: 1240px;
+    height: 1653px;
+}
+.grid3 .grid3__clientes4 {
+    grid-area: foto4;
+    width: 1240px;
+    height: 841px;
+}
+.grid3 .grid3__clientes5 {
+    grid-area: foto5;
+    width: 1240px;
+    height: 2617px;
+}
+.grid3 .grid3__clientes6 {
+    grid-area: foto6;
+    width: 1240px;
+    height: 783px;
 }
 
 
@@ -352,15 +403,6 @@ form{
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-/*
-.col {
-    width: 75vw
-    max-width: 1240px;
-    min-width: 320px;
-    margin: auto;   
-}
-*/
 
 /*--------------------------aca terminan los iconos del footer-----*/
 
@@ -653,6 +695,57 @@ footer {
 
 .grid2 .grid__imgg8{
     grid-area: imgg8;
+    width: 280px;
+    height: 426px;
+}
+
+.grid3{ 
+    display: grid;  
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "titulo"
+    "foto1"
+    "foto2"
+    "foto3"
+    "foto4"
+    "foto5"
+    "foto6";
+    justify-content: center;
+    grid-row-gap: 2rem;
+}
+
+.grid3 .grid3__clientes {
+    grid-area: titulo;
+}
+
+.grid3 .grid3__clientes1 {
+    grid-area: foto1;
+    width: 280px;
+    height: 426px;
+}
+.grid3 .grid3__clientes2 {
+    grid-area: foto2;
+    width: 280px;
+    height: 426px;
+}
+.grid3 .grid3__clientes3 {
+    grid-area: foto3;
+    width: 280px;
+    height: 426px;
+}
+.grid3 .grid3__clientes4 {
+    grid-area: foto4;
+    width: 280px;
+    height: 426px;
+}
+.grid3 .grid3__clientes5 {
+    grid-area: foto5;
+    width: 280px;
+    height: 426px;
+}
+.grid3 .grid3__clientes6 {
+    grid-area: foto6;
     width: 280px;
     height: 426px;
 }
