@@ -55,33 +55,34 @@
     <main>
 
       <h2>Datos de Contacto</h2>
-      <form class="form" action="" method="post" enctype="">
-
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="Nombre y Apellido" id="nombre" placeholder="Juan Garcia" required>
-        <br>
-        <label for="email">Correo electronico:</label>
-        <input type="email" id="mail" placeholder="ejemplo@gmail.com" required>
-        <br>
-        <label for="tel">Telefono:</label>
-        <input type="tel" id="Tel" placeholder="sin el 0 y sin el 15" required>
-        <br>
-        <label for="text">Motivo:</label>
-        <select>
-          <option value="1">Consultas</option>
-          <option value="2">Presupuesto</option>
-          <option value="3">Asesoramiento</option>
-          <option value="4">Otras</option>
-        </select>
-        <br>
-        <br>
-        <textarea name="textarea" rows="10" cols="50" placeholder="Detalle su consulta"></textarea>
-        <br>
-        <br>
-        <br>
-        <input type="submit" value="enviar">
-        <input type="reset" value="Limpiar">
-      
+      <form class="form"   action="https://formspree.io/f/xlekkpkb"
+      method="POST">
+        <div class="form__container">
+          <label for="nombre" name="name">Nombre y Apellido:</label>
+          <input type="Nombre y Apellido" id="nombre" placeholder="Juan Garcia" required>
+          <br>
+          <label for="email">Correo electronico:</label>
+          <input type="email" name="_replyto" id="mail" placeholder="ejemplo@gmail.com" required>
+          <br>
+          <label for="tel">Telefono:</label>
+          <input type="tel" id="Tel" placeholder="sin el 0 y sin el 15" required>
+          <br>
+          <label for="text">Motivo:</label>
+          <select>
+            <option value="1">Consultas</option>
+            <option value="2">Presupuesto</option>
+            <option value="3">Asesoramiento</option>
+            <option value="4">Otras</option>
+          </select>
+          <br>
+          <br>
+          <textarea name="textarea" rows="10" cols="50" placeholder="Detalle su consulta" name="message"></textarea>
+          <br>
+          <br>
+          <br>
+          <input type="submit" value="enviar">
+          <input type="reset" value="Limpiar">
+        </div>
       </form>
 
       <h2>Encontranos en:</h2>
