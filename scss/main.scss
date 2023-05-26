@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+@import "_footer.scss";
 
 body {
     font-family: calibri;
@@ -120,53 +121,17 @@ h5 {
 h6 {
     display: inline-block;
     padding-bottom: 0.625rem;
-
 }
 
 .infovideo {
     display:flex;
     padding: 0.5rem;
-
 }
 
 a {
     text-decoration: none;
 }
 
-
-/* aca la galeria de imagenes de todas las paginas----*/
-
-.linea{
-    background-color: #550b51;
-    height: 5px;
-    width: 100%;
-    display: box;
-}
-
-.galeria{
-    display: grid;
-    width: 95%;
-    margin: auto;
-    grid-gap: 10px;
-    padding: 40px;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    
-}
-
-.galeria img{
-    width: 100%;
-    vertical-align: top;
-    height: 300%;
-    object-fit: cover;
-}
-
-.row{
-    background-color: #eae7e7;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
-}
 /* grilla para seccion de fotos de produccios por tipo*/
 
 .grid{ 
@@ -311,6 +276,7 @@ a {
     justify-items:center;
     grid-row-gap: 2rem;
     background-color: #f3f3f9;
+    margin-bottom: 1rem;
 }
 
 .grid3 .grid3__clientes {
@@ -350,54 +316,6 @@ a {
 }
 
 
-/*--------------- aca estan los iconos y mapas del footer-----*/
-#face {
-    text-align: left;
-    padding-left: 5%;
-}
-
-
-#insta {
-    text-align: left;
-    padding-left: 7%;
-    right: 30rem;
-}
-
-.icons {
-    display: flex;
-    align-items: center;
-    width: 25%;
-}
-
-.mapa {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0%;
-
-}
-.information{
-    display: flex;
-    line-height: 1;
-    align-items: center;
-    width: 100%;
-}
-
-.information ul{
-    list-style: none;
-    padding: 0;
-
-}
-
-.information li{
-    display: flex;
-    padding-top: 5px;
-}
-
-.information h5{
-    margin: 0;
-}
-
 
 form{
     border: black;
@@ -405,45 +323,6 @@ form{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*--------------------------aca terminan los iconos del footer-----*/
-
-
-
-
-
-
-footer {
-    background-color: lightgray;
-    min-height: 1.563rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 0.188rem solid gray;
-    line-height: 0.625rem;
-    padding-left: 30px;
-
-}
-.container-boton{
-    background-color: #2e6329;
-    border: 0.063rem solid #fff;
-    position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    bottom: 1.25rem;
-    right: 1.563rem;
-    padding: 1.563rem;
-    transition: ease 0.3s;
-    animation: efecto 1.2s infinite;
-
-}
-
-.container-boton:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-.boton{
-    width: 5rem;
-    transition: ease 1s;
-}
 
 @keyframes slider {
         0% {margin-left: 0;}
@@ -468,327 +347,6 @@ footer {
 } 
 }
 
-
-
-
 /* mq para mobile */
 
-@media screen and (max-width: 480px) {
-    
-    .navbar.navbar-expand-lg.bg-body-tertiary{
-        background-color: #2d7ef8 !important;
-    }
-    
-    .navbar-collapse{
-        justify-content: end;
-    }
-    
-    .nav-link{
-        padding-top: 3rem;
-        font-size: 25px;
-        color: black;
-        font-weight: bold;
-        padding-bottom: 0;
-    }
-    
-    .container-fluid{
-        padding-bottom: 0;
-    }
-    .nav-link:hover{
-        color: white;
-    }
-    
-    .navbar-brand{
-        font-size: 35px;
-        text-decoration: underline;
-        padding-top: 3rem;
-        font-weight: bold;
-        min-height: 7.5rem;
-        font-family: 'Open Sans', sans-serif;
-    
-    }
-    
-    .navbar{
-        --bs-navbar-padding-y: 0;
-    }
-    
-    /* footer */
-
-    #face {
-        text-align: left;
-        padding-left: 5%;
-    }
-    
-    
-    #insta {
-        text-align: left;
-        padding-left: 7%;
-        right: 30rem;
-    }
-    
-    .icons {
-        display: flex;
-        align-items: center;
-        width: 25%;
-    }
-    footer {
-        background-color: lightgray;
-        min-height: 1.563rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-top: 0.188rem solid gray;
-        line-height: 0.625rem;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-    
-    }
-    .container-boton{
-        background-color: #2e6329;
-        border: 0.063rem solid #fff;
-        position: fixed;
-        z-index: 999;
-        border-radius: 50%;
-        bottom: 1.25rem;
-        right: 1.563rem;
-        padding: 1.563rem;
-        transition: ease 0.3s;
-        animation: efecto 1.2s infinite;
-    
-    }
-    
-    .container-boton:hover{
-        transform: scale(1.1);
-        transition: 0.3s;
-    }
-    
-    .boton{
-        width: 3rem;
-        transition: ease 1s;
-    }
-
-    /* main nuestros productos */
-    .grid{ 
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content;
-        grid-template-areas: 
-        "title1"
-        "img2"
-        "title2"
-        "img1"
-        "title3"
-        "img3"
-        "title4"
-        "img4"
-        "description";
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
-        justify-items: center;
-    }
-    .grid .grid__title1{
-        grid-area: title1;
-    }
-    .grid .grid__title2{
-        grid-area: title2;
-    }    
-    .grid .grid__title3{
-        grid-area: title3;
-    }    
-    .grid .grid__title4{
-        grid-area: title4;
-    }
-    
-    .grid .grid__description{
-        grid-area: description;
-    }
-    
-    .grid .grid__img1{
-        grid-area: img1;
-        width: 280px;
-        height: 426px;
-    }
-    
-    .grid .grid__img2{
-        grid-area: img2;
-        width: 280px;
-        height: 426px;
-    }
-    .grid .grid__img3{
-        grid-area: img3;
-        width: 280px;
-        height: 426px;
-    }
-    .grid .grid__img4{
-        grid-area: img4;
-        width: 280px;
-        height: 426px;
-    }
-    
-    .grid .grid__img5{
-        grid-area: img5;
-        width: 280px;
-        height: 426px;
-    }
-    
-    /* grid2 nuestras instalaciones */
-
-    
-    .grid2{ 
-    display: grid;  
-    grid-template-columns: 100%;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
-    grid-template-areas: 
-    "imgg1"
-    "imgg2"
-    "imgg3"
-    "imgg4"
-    "imgg6"
-    "imgg5"
-    "imgg7"
-    "imgg8";
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    justify-items: center;
-}
-
-
-.grid2 .grid__imgg1{
-    grid-area: imgg1;
-    width: 280px;
-    height: 426px;
-}
-
-.grid2 .grid__imgg2{
-    grid-area: imgg2;
-    width: 280px;
-    height: 426px;
-}
-
-.grid2 .grid__imgg3{
-    grid-area: imgg3;
-    width: 280px;
-    height: 426px;
-}
-
-.grid2 .grid__imgg4{
-    grid-area: imgg4;
-    width: 280px;
-    height: 426px;
-}
-
-.grid2 .grid__imgg5{
-    grid-area: imgg5;
-    width: 280px;
-    height: 426px;
-}
-
-.grid2 .grid__imgg6{
-    grid-area: imgg6;
-    width: 280px;
-    height: 426px;
-}
-
-.grid2 .grid__imgg7{
-    grid-area: imgg7;
-    width: 280px;
-    height: 426px;
-}
-
-.grid2 .grid__imgg8{
-    grid-area: imgg8;
-    width: 280px;
-    height: 426px;
-}
-
-.grid3{ 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
-    grid-template-areas: 
-    "titulo"
-    "foto1"
-    "foto2"
-    "foto3"
-    "foto4"
-    "foto5"
-    "foto6";
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    justify-items: center;
-}
-
-.grid3 .grid3__clientes {
-    grid-area: titulo;
-}
-
-.grid3 .grid3__clientes1 {
-    grid-area: foto1;
-    width: 280px;
-    height: 426px;
-}
-.grid3 .grid3__clientes2 {
-    grid-area: foto2;
-    width: 280px;
-    height: 426px;
-}
-.grid3 .grid3__clientes3 {
-    grid-area: foto3;
-    width: 280px;
-    height: 426px;
-}
-.grid3 .grid3__clientes4 {
-    grid-area: foto4;
-    width: 280px;
-    height: 426px;
-}
-.grid3 .grid3__clientes5 {
-    grid-area: foto5;
-    width: 280px;
-    height: 426px;
-}
-.grid3 .grid3__clientes6 {
-    grid-area: foto6;
-    width: 280px;
-    height: 426px;
-}
-
-.slider {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    padding-top: .5rem;
-}
-
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slider 16s infinite;
-    animation-direction: alternate; 
-}
-
-.slider li {
-    list-style: none;
-    width: 100%;
-}
-
-.slider img {
-    width: 100%;
-}
-
-.descriptionvideo{
-    padding-left: .5rem;
-    margin-top: 1rem;
-    text-align: center;
-    color: #2d7ef8;
-    font-size: medium;
-}
-
-.map-responsive {
-    width: 320px;
-    height: 420px;
-}
-.form {
-    align-items: center;
-}
-}
+@import "_responsive.scss";
