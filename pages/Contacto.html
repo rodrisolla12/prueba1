@@ -54,37 +54,55 @@
     
     <main>
 
-      <h2>Datos de Contacto</h2>
-      <form class="form"   action="https://formspree.io/f/xlekkpkb"
-      method="POST">
-        <div class="form__container">
-          <label for="nombre" name="name">Nombre y Apellido:</label>
-          <input type="Nombre y Apellido" id="nombre" placeholder="Juan Garcia" required>
-          <br>
-          <label for="email">Correo electronico:</label>
-          <input type="email" name="_replyto" id="mail" placeholder="ejemplo@gmail.com" required>
-          <br>
-          <label for="tel">Telefono:</label>
-          <input type="tel" id="Tel" placeholder="sin el 0 y sin el 15" required>
-          <br>
-          <label for="text">Motivo:</label>
-          <select>
-            <option value="1">Consultas</option>
-            <option value="2">Presupuesto</option>
-            <option value="3">Asesoramiento</option>
-            <option value="4">Otras</option>
-          </select>
-          <br>
-          <br>
-          <textarea name="textarea" rows="10" cols="50" placeholder="Detalle su consulta" name="message"></textarea>
-          <br>
-          <br>
-          <br>
-          <input type="submit" value="enviar">
-          <input type="reset" value="Limpiar">
-        </div>
-      </form>
+      <h2 class="datodecontacto" align="center">Datos de Contacto</h2>
 
+      <div class="containerform">
+        <div class="row">
+          <div class="col">
+            
+            <div class="mb-3">
+              <label for="nombreyapellido" class="form-label form-control-lg" >Nombre y Apellido</label>
+              <input id="nombreyapellio" class="form-control form-control-lg" type="name" placeholder="Pablo Diaz">
+            </div>
+
+            <div class="mb-3">
+              <label for="Correo" class="form-label form-control-lg">Email</label>
+              <input id="Correo" class="form-control form-control-lg" type="email" placeholder="ejemplo@gmail.com">
+            </div>
+          
+            <div class="mb-3">
+              <label for="telefono" class="form-label form-control-lg">Telefono</label>
+              <input id="telefono" class="form-control form-control-lg" type="telefono" placeholder="sin el 0 y sin el 15">
+            </div>
+
+            <div class="mb-3">
+              <label for="motivo" class="form-label form-control-lg">Seleccione el motivo</label>
+              <input list="motivo" class="form-control form-control-lg" placeholder="click aqui">
+              <datalist id="motivo">
+                <option value="Consultas">
+                <option value="Presupuesto">
+                <option value="Asesoramiento">
+                <option value="Otras">
+              </datalist>
+            </div>
+
+            <div class="mb-3">
+              <label for="coment" class="form-label form-control-lg"></label>
+              <textarea id="coment" class="form-control form-control-lg">Escriba su consulta...</textarea>
+            </div>
+            
+            <div class="mb-3">
+            <input type="submit" class="form-label form-control-lg" value="enviar">
+            </div>
+
+            <div class="mb-3">
+            <input type="reset" class="form-label form-control-lg" value="Limpiar">
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
       <h2>Encontranos en:</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.571719634057!2d-62.06048098479102!3d-38.88803947957212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ed77fbd421d3c5%3A0xe25166df7c8a7cb3!2sJr%20Alumini!5e0!3m2!1ses!2sar!4v1680737119620!5m2!1ses!2sar" width="460" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
@@ -93,15 +111,14 @@
     </main>
     
     <footer>
-      <!-- fuente del texto de contacto calibri -->
-      <!-- logo de reloj en horario, logo de point en dir, logo de wsp, logo de fb -->
-      <div class="information">
+
+      <section class="information">
         <ul>
           <li><img src="../carrusel/reloj1.png" height="25px;" width="25px;"><h5>Lunes a viernes de 7hs a 15hs</h5></li>
           <li><img src="../carrusel/ubicacion4.png" height="25px;" width="25px;"><h5>Dir: Jesus Maria 1363 - Punta Alta - Bs As - CP 8109</h5></li>
           <li><img src="../carrusel/telefono.png" height="25px;" width="25px;"><h5>Tel: 02932-15527985</h6></li>
         </ul>
-      </div>  
+      </section>  
           <div class="icons">
             <h5 id="face"><a href="https://www.facebook.com/JRalumini/"><img src="../carrusel/face.png" width="85px;"></a></h5>
             <h5 id="insta"><a href="https://www.instagram.com/jralumini.pa/"><img src="../carrusel/insta.png" width="85px;"></a></h5>
