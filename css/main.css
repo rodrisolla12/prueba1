@@ -295,7 +295,7 @@ a {
   grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
   grid-template-areas: "imgg1 imgg2" "imgg3 imgg4" "imgg6 imgg5" "imgg7 imgg8";
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
   justify-items: center;
 }
 
@@ -310,42 +310,49 @@ a {
   grid-area: imgg2;
   width: 720px;
   height: 540px;
+  margin: 1rem;
 }
 
 .grid2 .grid__imgg3 {
   grid-area: imgg3;
   width: 720px;
   height: 540px;
+  margin: 1.5rem;
 }
 
 .grid2 .grid__imgg4 {
   grid-area: imgg4;
   width: 720px;
   height: 540px;
+  margin: 1.5rem;
 }
 
 .grid2 .grid__imgg5 {
   grid-area: imgg5;
   width: 720px;
   height: 540px;
+  margin: 1.5rem;
 }
 
 .grid2 .grid__imgg6 {
   grid-area: imgg6;
   width: 720px;
   height: 540px;
+  margin: 1.5rem;
 }
 
 .grid2 .grid__imgg7 {
   grid-area: imgg7;
   width: 720px;
   height: 540px;
+  margin: 1.5rem;
 }
 
 .grid2 .grid__imgg8 {
   grid-area: imgg8;
   width: 720px;
   height: 540px;
+  margin: 1.5rem;
 }
 
 /* 320px ancho max por columna y foto para que entren las 4 y queden prolijas*/
